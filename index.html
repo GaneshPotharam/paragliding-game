@@ -396,9 +396,9 @@
             mountains.forEach(mountain => {
                 const mountainTop = 500 - mountain.element.offsetHeight;
                 if (
-                    paragliderX > mountain.x - 30 &&
+                    paragliderX > mountain.x - 10 &&
                     paragliderX < mountain.x + 300 &&
-                    paragliderY > mountainTop - 30
+                    paragliderY > mountainTop - 10
                 ) {
                     endGame();
                 }
