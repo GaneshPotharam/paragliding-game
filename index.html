@@ -323,7 +323,7 @@
                 paragliderY = 20;
                 velocityY = 0;
             }
-            if (paragliderY > 430) {
+            if (paragliderY > 10) {
                 endGame();
                 return;
             }
@@ -396,9 +396,9 @@
             mountains.forEach(mountain => {
                 const mountainTop = 500 - mountain.element.offsetHeight;
                 if (
-                    paragliderX > mountain.x - 10 &&
-                    paragliderX < mountain.x + 300 &&
-                    paragliderY > mountainTop - 10
+                    paragliderX > mountain.x - 1 &&
+                    paragliderX < mountain.x + 10 &&
+                    paragliderY > mountainTop - 1
                 ) {
                     endGame();
                 }
